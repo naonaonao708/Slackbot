@@ -1,0 +1,6 @@
+
+API_TOKEN = "xoxb-2337475580438-2414949702117-FCdenoGFQXdxrcd5VXH6LM1z"
+
+DEFAULT_REPLY = "test"
+
+PLUGINS = ['plugins']
