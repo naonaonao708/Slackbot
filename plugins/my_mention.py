@@ -1,10 +1,13 @@
 from slackbot.bot import respond_to
 from slackbot.bot import listen_to
 from slackbot.bot import default_reply
+import random
 
-@respond_to('mention')
+@respond_to('今週')
 def mention_func(message):
-    message.reply('How dare you call me a mention')
+    name = ["小原","梶野","金森"]
+    name_num = random.randrange(len(name)-1)
+    message.reply(name[name_num]+"さんです")
 
 @listen_to('listen')
 def listen_func(message):
