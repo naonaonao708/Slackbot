@@ -49,7 +49,6 @@ def toban_func(message):
         start = df_sheet2['start'][n]
         end = df_sheet2['end'][n]
         if start <= today_serial <= end:
-            message.send(df_sheet2['name'][n])
+            message.send(df_sheet2['name'][n] + 'さんです')
         else:
             pass
-            
